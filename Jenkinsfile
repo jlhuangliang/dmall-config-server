@@ -25,7 +25,7 @@ node{
     }
 
     stage('Test') {
-       sh 'gradlew test'
+       sh './gradlew test'
     }
 
     stage('Docker image') {
