@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-docker build -t dmall-docker-registry:5000/dmall/config-server:$BUILD_NUMBER .
-docker tag dmall-docker-registry:5000/dmall/config-server:$BUILD_NUMBER dmall-docker-registry:5000/dmall/config-server:latest
+docker build -t $DMALL_DOCKER_REGISTRY/dmall/config-server:$BUILD_NUMBER .
+docker tag $DMALL_DOCKER_REGISTRY/dmall/config-server:$BUILD_NUMBER $DMALL_DOCKER_REGISTRY/dmall/config-server:latest
 
-docker push dmall-docker-registry:5000/dmall/config-server:$BUILD_NUMBER
-docker push dmall-docker-registry:5000/dmall/config-server:latest
+docker push $DMALL_DOCKER_REGISTRY/dmall/config-server:$BUILD_NUMBER
+docker push $DMALL_DOCKER_REGISTRY/dmall/config-server:latest
 
