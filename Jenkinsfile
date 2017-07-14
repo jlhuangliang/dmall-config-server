@@ -1,4 +1,4 @@
-node('build'){
+node{
     step([$class: 'WsCleanup'])
 
     stage('Checkout') {
