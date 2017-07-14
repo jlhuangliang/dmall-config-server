@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jlhuangliang/appointments-repo.git
+          uri: https://github.com/jlhuangliang/dmall-config-repo.git
 
 server:
   port: 8888
